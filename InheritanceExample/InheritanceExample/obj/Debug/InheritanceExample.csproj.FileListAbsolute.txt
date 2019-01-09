@@ -1,0 +1,7 @@
+C:\Users\ecastillo\source\repos\InheritanceExample\InheritanceExample\bin\Debug\InheritanceExample.exe.config
+C:\Users\ecastillo\source\repos\InheritanceExample\InheritanceExample\bin\Debug\InheritanceExample.exe
+C:\Users\ecastillo\source\repos\InheritanceExample\InheritanceExample\bin\Debug\InheritanceExample.pdb
+C:\Users\ecastillo\source\repos\InheritanceExample\InheritanceExample\obj\Debug\InheritanceExample.csprojAssemblyReference.cache
+C:\Users\ecastillo\source\repos\InheritanceExample\InheritanceExample\obj\Debug\InheritanceExample.csproj.CoreCompileInputs.cache
+C:\Users\ecastillo\source\repos\InheritanceExample\InheritanceExample\obj\Debug\InheritanceExample.exe
+C:\Users\ecastillo\source\repos\InheritanceExample\InheritanceExample\obj\Debug\InheritanceExample.pdb
