@@ -1,0 +1,7 @@
+C:\Users\ecastillo\source\repos\CollectionsExample\CollectionsExample\bin\Debug\CollectionsExample.exe.config
+C:\Users\ecastillo\source\repos\CollectionsExample\CollectionsExample\bin\Debug\CollectionsExample.exe
+C:\Users\ecastillo\source\repos\CollectionsExample\CollectionsExample\bin\Debug\CollectionsExample.pdb
+C:\Users\ecastillo\source\repos\CollectionsExample\CollectionsExample\obj\Debug\CollectionsExample.csprojAssemblyReference.cache
+C:\Users\ecastillo\source\repos\CollectionsExample\CollectionsExample\obj\Debug\CollectionsExample.csproj.CoreCompileInputs.cache
+C:\Users\ecastillo\source\repos\CollectionsExample\CollectionsExample\obj\Debug\CollectionsExample.exe
+C:\Users\ecastillo\source\repos\CollectionsExample\CollectionsExample\obj\Debug\CollectionsExample.pdb
