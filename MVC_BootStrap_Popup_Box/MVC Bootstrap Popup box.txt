@@ -1,0 +1,30 @@
+<!-- Popup Box -->
+<a class="btn btn-success" data-toggle="modal" data-target=".bootstrapmodal">View</a>
+
+<div class="modal fade bootstrapmodal">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <button data-dismiss="modal" class="close">Test</button>
+
+                <div class="modal-title"> my modal</div>
+
+                </div>
+            <div class="modal-body">
+
+                <p>
+                    body
+                </p>
+                </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary"></button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
