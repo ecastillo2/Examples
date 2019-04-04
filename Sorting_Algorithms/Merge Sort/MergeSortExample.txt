@@ -1,0 +1,136 @@
+Merge Sort is a sorting algorithm that uses the divide and conquer method. It divides the array into two parts and then calls itself for each of these two parts. This process is continued until the array is sorted.
+
+A program that demonstrates merge sort in C# is given as follows −
+
+Example
+Live Demo
+
+using System;
+namespace QuickSortDemo {
+   class Example {
+      static public void merge(int[] arr, int p, int q, int r) {
+         int i, j, k;
+         int n1 = q - p + 1;
+         int n2 = r - q;
+         int[] L = new int[n1];
+         int[] R = new int[n2];
+         for (i = 0; i < n1; i++) {
+            L[i] = arr[p + i];
+         }
+         for (j = 0; j < n2; j++) {
+            R[j] = arr[q + 1 + j];
+         }
+         i = 0;
+         j = 0;
+         k = p;
+         while (i < n1 && j < n2) {
+            if (L[i] <= R[j]) {
+               arr[k] = L[i];
+               i++;
+            } else {
+               arr[k] = R[j];
+               j++;
+            }
+            k++;
+         }
+         while (i < n1) {
+            arr[k] = L[i];
+            i++;
+            k++;
+         }
+         while (j < n2) {
+            arr[k] = R[j];
+            j++;
+            k++;
+         }
+      }
+      static public void mergeSort(int[] arr, int p, int r) {
+         if (p < r) {
+            int q = (p + r) / 2;
+            mergeSort(arr, p, q);
+            mergeSort(arr, q + 1, r);
+            merge(arr, p, q, r);
+         }
+      }
+      static void Main(string[] args) {
+         int[] arr = {76, 89, 23, 1, 55, 78, 99, 12, 65, 100};
+         int n = 10, i;
+         Console.WriteLine("Merge Sort");
+         Console.Write("Initial array is: ");
+         for (i = 0; i < n; i++) {
+            Console.Write(arr[i] + " ");
+         }
+         mergeSort(arr, 0, n-1);
+         Console.Write("\nSorted Array is: ");
+         for (i = 0; i < n; i++) {
+            Console.Write(arr[i] + " ");
+         }
+      }
+   }
+}
+The output of the above program is as follows.
+
+Merge Sort
+Initial array is: 76 89 23 1 55 78 99 12 65 100
+Sorted Array is: 1 12 23 55 65 76 78 89 99 100
+Now let us understand the above program.
+
+In the main() function, first the initial array is displayed. Then, the function mergeSort() is called to perform merge sort on the array. The code snippet for this is given as follows.
+
+int[] arr = {76, 89, 23, 1, 55, 78, 99, 12, 65, 100};
+int n = 10, i;
+Console.WriteLine("Merge Sort");
+Console.Write("Initial array is: ");
+for (i = 0; i < n; i++) {
+   Console.Write(arr[i] + " ");
+}
+mergeSort(arr, 0, n-1);
+In the function mergeSort(), q is calculated as the mid point of the array. Then mergeSort() is called on both the sub-arrays created. Finally, merge() is called that merges these sub-arrays. The code snippet for this is given as follows.
+
+if (p < r) {
+   int q = (p + r) / 2;
+   mergeSort(arr, p, q);
+   mergeSort(arr, q + 1, r);
+   merge(arr, p, q, r);
+}
+In the function merge(), two sorted subarrays are provided. This function basically merges these subarrays into a single array in such a manner that the resultant array is also sorted. The code snippet for this is given as follows.
+
+int i, j, k;
+int n1 = q - p + 1;
+int n2 = r - q;
+int[] L = new int[n1];
+int[] R = new int[n2];
+for (i = 0; i < n1; i++) {
+   L[i] = arr[p + i];
+}       
+for (j = 0; j < n2; j++) {
+   R[j] = arr[q + 1 + j];
+}
+i = 0;
+j = 0;
+k = p;   
+while (i < n1 && j < n2) {
+   if (L[i] <= R[j]) {
+      arr[k] = L[i];
+      i++;
+   } else {
+      arr[k] = R[j];
+      j++;
+   }
+   k++;
+} 
+while (i < n1) {
+   arr[k] = L[i];
+   i++;
+   k++;
+}
+while (j < n2) {
+   arr[k] = R[j];
+   j++;
+   k++;
+}
+while (j < n2) {
+   arr[k] = R[j];
+   j++;
+   k++;
+}

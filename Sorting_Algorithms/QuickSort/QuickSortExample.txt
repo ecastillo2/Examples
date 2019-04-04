@@ -1,0 +1,104 @@
+Quick Sort is a sorting algorithm that uses the divide and conquer method. It takes a pivot element and places it in its correct position. Then the array to the left and right of the pivot element are again sorted using Quick Sort. This is done until the whole array is sorted.
+
+A program that demonstrates Quick Sort using Recursion in C# is given as follows −
+
+Example
+Live Demo
+
+using System;
+namespace QuickSortDemo {
+   class Example {
+      static public int Partition(int[] arr, int left, int right) {
+         int pivot;
+         pivot = arr[left];
+         while (true) {
+            while (arr[left] < pivot) {
+               left++;
+            }
+            while (arr[right] > pivot) {
+               right--;
+            }
+            if (left < right) {
+               int temp = arr[right];
+               arr[right] = arr[left];
+               arr[left] = temp;
+            } else {
+               return right;
+            }
+         }
+      }
+      static public void quickSort(int[] arr, int left, int right) {
+         int pivot;
+         if (left < right) {
+            pivot = Partition(arr, left, right);
+            if (pivot > 1) {
+               quickSort(arr, left, pivot - 1);
+            }
+            if (pivot + 1 < right) {
+               quickSort(arr, pivot + 1, right);
+            }
+         }
+      }
+      static void Main(string[] args) {
+         int[] arr = {67, 12, 95, 56, 85, 1, 100, 23, 60, 9}; 
+         int n = 10, i;
+         Console.WriteLine("Quick Sort");
+         Console.Write("Initial array is: ");   
+         for (i = 0; i < n; i++) {
+            Console.Write(arr[i] + " ");
+         }
+         quickSort(arr, 0, 9);
+         Console.Write("\nSorted Array is: ");   
+         for (i = 0; i < n; i++) {
+            Console.Write(arr[i] + " ");
+         }
+      }
+   }
+}
+The output of the above program is as follows.
+
+Quick Sort
+Initial array is: 67 12 95 56 85 1 100 23 60 9 
+Sorted Array is: 1 9 12 23 56 60 67 85 95 100
+Now let us understand the above program.
+
+In the main() function, first the initial array is displayed. Then, the function quickSort() is called to perform quick sort on the array. The code snippet for this is given as follows −
+
+int[] arr = {67, 12, 95, 56, 85, 1, 100, 23, 60, 9}; 
+int n = 10, i;
+Console.WriteLine("Quick Sort");
+Console.Write("Initial array is: ");   
+for (i = 0; i < n; i++) {
+   Console.Write(arr[i] + " ");
+}
+quickSort(arr, 0, 9); 
+In the function quickSort(), a pivot element is selected by calling the Partition() function. Then quickSort() is called again with arguments that depend on the value of pivot. The code snippet for this is given as follows −
+
+if (left < right) {
+   pivot = Partition(arr, left, right);
+   if (pivot > 1) {
+      quickSort(arr, left, pivot - 1);
+   }
+   if (pivot + 1 < right) {
+      quickSort(arr, pivot + 1, right);
+   }
+}
+In the Partition() function, the pivot element is selected as the leftmost element of the array provided and then it is set to its correct position in the array. The code snippet that demonstrates all the steps for this is given as follows.
+
+int pivot; 
+pivot = arr[left];
+while (true) {
+   while (arr[left] < pivot) {
+      left++;
+   }
+   while (arr[right] > pivot) {
+      right--;
+   }
+   if (left < right) {
+      int temp = arr[right];
+      arr[right] = arr[left];
+      arr[left] = temp;
+   } else {
+      return right;
+   }
+}

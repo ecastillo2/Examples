@@ -1,0 +1,29 @@
+System.Collections.Generic namespace is available in C# for LinkedList. The LinkedList<T> class allows insertion and deletion of elements from the list at a fast pace.
+
+C# LinkedList<T> class uses the concept of linked list. It allows us to insert and delete elements fastly. It can have duplicate elements. It is found in System.Collections.Generic namespace.
+
+Here is an example −
+
+Example
+Live Demo
+
+using System;
+using System.Collections.Generic;
+
+class Demo {
+   static void Main() {
+      LinkedList < string > l = new LinkedList < string > ();
+
+      l.AddLast("one");
+      l.AddLast("two");
+      l.AddLast("three");
+
+      foreach(var ele in l) {
+         Console.WriteLine(ele);
+      }
+   }
+}
+Output
+one
+two
+three
