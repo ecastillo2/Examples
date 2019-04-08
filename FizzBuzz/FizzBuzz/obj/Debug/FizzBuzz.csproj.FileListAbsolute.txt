@@ -1,0 +1,7 @@
+C:\Users\Erick Castillo\source\repos\FizzBuzz\FizzBuzz\bin\Debug\FizzBuzz.exe.config
+C:\Users\Erick Castillo\source\repos\FizzBuzz\FizzBuzz\bin\Debug\FizzBuzz.exe
+C:\Users\Erick Castillo\source\repos\FizzBuzz\FizzBuzz\bin\Debug\FizzBuzz.pdb
+C:\Users\Erick Castillo\source\repos\FizzBuzz\FizzBuzz\obj\Debug\FizzBuzz.csprojAssemblyReference.cache
+C:\Users\Erick Castillo\source\repos\FizzBuzz\FizzBuzz\obj\Debug\FizzBuzz.csproj.CoreCompileInputs.cache
+C:\Users\Erick Castillo\source\repos\FizzBuzz\FizzBuzz\obj\Debug\FizzBuzz.exe
+C:\Users\Erick Castillo\source\repos\FizzBuzz\FizzBuzz\obj\Debug\FizzBuzz.pdb
